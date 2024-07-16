@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: k8s-meme-app
-    image: pavangudiwada/buildxtest2:latest
+    image: pavangudiwada/meme-generator:latest
     ports:
       - containerPort: 5000
         protocol: TCP
