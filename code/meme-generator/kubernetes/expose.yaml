@@ -2,7 +2,6 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: argocd-cert
-  namespace: robustaargo
 spec:
   secretName: robustaargo-tls
   issuerRef:
@@ -20,7 +19,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: robustaargo-ingress
-  namespace: robustaargo
   annotations:
 #    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
